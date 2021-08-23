@@ -15,11 +15,15 @@ function Counter(props) {
   );
 }
 
+//first argument which connect function takes
 const mapStateToPropes = (state) => ({
+  //all the properties in this object will be available as object/values through props in connected component as object/values e.g value
   value: state.counterState
 });
 
+//second argument which connect function takes
 const mapDispatchToProps = (dispatch) => ({
+  //all the properties in this object will be available through props in connected component as functions e.g increase,decrease and reset
   increase: function () {
     dispatch({ type: "INCREASE_COUNTER" });
   },

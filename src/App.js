@@ -3,6 +3,7 @@ import { store } from "./store";
 import Todos from "./components/Todos";
 import Counter from "./components/Counter";
 import "./App.css";
+
 function App() {
   return (
     <ReduxProvider store={store}>
